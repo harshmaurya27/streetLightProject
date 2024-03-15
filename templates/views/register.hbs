@@ -1,0 +1,148 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Complaint Page</title>
+    <link rel="stylesheet" href="./css/stylesr.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="main-header">
+        <div class="header-left">
+          <div class="symbol-logo">
+            <img
+              src="\images\imageso\ashok2.jpg"
+              alt=""
+              srcset=""
+              class="ashok-stumbh"
+            />
+
+          </div>
+          <div class="vl"></div>
+          <img
+            src="\images\imageso\College.png"
+            alt=""
+            srcset=""
+            class="ashok-stumbh"
+          />
+
+          <div class="company-logo">
+            <div class="compname">
+              <span>Smart StreetLight</span>
+
+              <p>Rajkiya Engineering college <br />Sonbhadra U.P</p></div>
+
+          </div>
+        </div>
+        <div class="header-right">
+          <img
+            src="\images\imageso\Digital-india-black-removebg-preview.png"
+            alt=""
+            srcset=""
+            class="make-image"
+          />
+
+        </div>
+
+      </div>
+      <hr class="hrLine" />
+
+      <header class="header-content">
+        <nav class="nav">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#features" class="nav-link">Organisation</a>
+          <a href="#pricing" class="nav-link">Carrers</a>
+          <a href="#blog" class="nav-link">RTI</a>
+          <a href="#about" class="nav-link">About</a>
+        </nav>
+
+        <a href="#contact" class="contact-button"> Contact Us </a>
+
+        <button type="button" class="menu-button">
+          <img
+            src="\images\imageso\Hamburger.svg"
+            alt="menuButton"
+            class="menu-icon"
+          />
+        </button>
+      </header>
+    </div>
+    <div id="main">
+      <div id="mainUp">
+        <h2>Welcome to Our Street Light Complaint Page!</h2>
+      </div>
+      <div id="mainDown">
+        <div class="container">
+          <h1>Submit a Complaint</h1>
+          <form action="/register" method="POST" id="complaintForm">
+            <div class="form-group">
+              <label for="personname">Your Name:</label>
+              <input
+                type="text"
+                id="name"
+                name="personname"
+                placeholder="Enter Your Name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="example@gmail.com"
+              />
+            </div>
+
+            <div class="input-group">
+              <label for="Date">Application Date:</label>
+              <input type="date" name="Date" id="dob" />
+            </div>
+            <div class="input-group">
+              <label for="lightId">Add Fault LightId:</label>
+              <input
+                type="text"
+                name="lightId"
+                id="title"
+                placeholder=" Type Light No"
+              />
+            </div>
+            {{! <input type="file" name="upload you doc" id="proof" /> }}
+            <div class="input-group">
+              <label for="areaPin">Area/Block:</label>
+              <input
+                type="text"
+                name="areaPin"
+                id="username"
+                placeholder="area PIN code"
+              />
+            </div>
+            <div class="input-group">
+              <label for="complaint">Issue Discription:</label>
+              <textarea id="complaint" name="complaint" rows="4"></textarea>
+            </div>
+            {{! <button type="submit">Submit</button> }}
+            <input type="submit" class="btnRegister" value="Register" />
+          </form>
+          <div id="response"></div>
+        </div>
+        <div id="rightside">
+
+          <p>Thank you for taking the time to report street light issues.
+            Together, we can ensure that our streets remain brightly
+            illuminated, enhancing the safety and comfort of our community. If
+            you have any questions or concerns, feel free to contact us directly
+            . We appreciate your cooperation and support.</p>
+          <img src="\images\imagesr\regright.jpg" alt="" srcset="" />
+          <div id="contact">
+            <a href="#">Contact Us</a>
+            <a href="#">Go To Home</a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    {{! <script src="script.js"></script> }}
+  </body>
+</html>
